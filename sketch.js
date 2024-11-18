@@ -15,6 +15,8 @@ function setup() {
   let totalHeight = (size+padding)*data.getRowCount()+(size+padding);
   createCanvas(windowWidth, totalHeight);
   background("black");
+  noLoop();
+
 
   
   dataObj=data.getObject();
@@ -128,7 +130,7 @@ function drawGraphics(x,y,rowData,rowData){
 
   fill(textColor);
   textSize(30);
-  text("River's min,max and average temperature",windowWidth/2,windowHeight*0.08 );
+  text("River's min,max and average temperature",windowWidth/2,windowHeight*0.1 );
 
   fill(textColor);
   textSize(15);
